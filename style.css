@@ -1,0 +1,9 @@
+.header{
+    background-image: url(images/banner.png);
+    object-fit:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
