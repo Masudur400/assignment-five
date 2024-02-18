@@ -45,7 +45,7 @@ function grandTotalCost() {
   document.getElementById('cupon').addEventListener('keyup', function (e) {
     const text = e.target.value;
     const apply = document.getElementById('cupon-btn');
-    if (text === 'NEW 15') {
+    if (text === 'NEW15') {
       setInnerText('grand-total', totalCost - (totalCost * .15));
       apply.removeAttribute('disabled');
     }
