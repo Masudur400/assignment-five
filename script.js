@@ -3,8 +3,12 @@ const allBtn = document.querySelectorAll('#btn');
 let count = 0;
 for (const btn of allBtn) {
   btn.addEventListener('click', function (e) {
-    btn.style.backgroundColor = 'lightGreen';
+    if(count >= 4){
+      alert("Maximum purchased")
+      return;
+    }
     count = count + 1;
+    btn.style.backgroundColor = 'lightGreen';
 
     const sitName = btn.innerText;
     const appendContainer = document.getElementById('append-container');
@@ -26,11 +30,7 @@ for (const btn of allBtn) {
     grandTotalCost();
     setInnerText('sit-count', count);
   })
-}
-
-function appendChild() {
-
-}
+} 
 
 
 function totalCost() {
@@ -55,9 +55,11 @@ function grandTotalCost() {
     }
   })
   setInnerText('grand-total', totalCost)
+  // document.getElementById('cupon-btn').parentNode.classList.add('hidden');
 }
 
 document.getElementById('cupon-btn').addEventListener('click', function (e) {
+  
   document.getElementById('cupon-btn').parentNode.classList.add('hidden');
 })
 
@@ -80,4 +82,4 @@ function next() {
   const successSection = document.getElementById('success');
   successSection.classList.remove('hidden');
 }
-
+ 
