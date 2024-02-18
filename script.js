@@ -55,7 +55,7 @@ function grandTotalCost() {
     }
   })
   setInnerText('grand-total', totalCost)
-  // document.getElementById('cupon-btn').parentNode.classList.add('hidden');
+   
 }
 
 document.getElementById('cupon-btn').addEventListener('click', function (e) {
