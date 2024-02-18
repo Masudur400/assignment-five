@@ -134,7 +134,7 @@
             <img class="h-full" src="images/cupon-devider.png" alt="">
           </div>
           <div class="lg:m-8 lg:ml-3 m-2 lg:space-y-5 space-y-2">
-            <h2 class="lg:text-3xl text-lg font-medium lg:font-bold">NEW15</h2>
+            <h2 class="lg:text-3xl text-lg font-medium lg:font-bold">NEW 15</h2>
             <p class="text-base lg:text-xl font-normal lg:font-medium opacity-80">Coupon Code</p>
           </div>
         </div>
@@ -324,18 +324,21 @@
             <p class="lg:text-xl font-medium">Price</p> 
           </div>
     
-          <div class="border-dotted mt-5 border-gray-300 border-b-2 space-y-3">
-            <div class="flex justify-between">
+          <div class="border-dotted mt-5 border-gray-300 border-b-2 space-y-3 ">
+            <div id="append-container" class="content">
+
+            </div>
+            <!-- <div class="flex justify-between">
               <p class="lg:text-xl font-medium">C1</p>
               <p class="lg:text-xl font-medium">Economy</p>
               <p class="lg:text-xl font-medium">550</p> 
-            </div>
+            </div> -->
             
-            <div class="flex justify-between ">
+            <!-- <div class="flex justify-between ">
               <p class="lg:text-xl font-medium">C1</p>
               <p class="lg:text-xl font-medium">Economy</p>
               <p class="lg:text-xl font-medium">550</p> 
-            </div>
+            </div> -->
           </div>
     
           <div class=" mt-2 flex justify-between">
@@ -343,8 +346,8 @@
             <p class="font-bold">BDT <span id="total-cost">00</span></p>
           </div>
           <div class="bg-white rounded-lg flex justify-between mt-4">
-            <input type="text" placeholder="Have any cupon?" class=" input  w-52 lg:w-full max-w-xs " />
-            <button class="btn bg-green-400 text-white font-bold">Apply</button>
+            <input id="cupon" type="text" placeholder="Have any cupon?" class=" input  w-52 lg:w-full max-w-xs " />
+            <button id="cupon-btn" class="btn bg-green-400 text-white font-bold" disabled>Apply</button>
           </div>
           <div class=" mt-3 flex justify-between">
             <p class="font-bold">Grand Total</p>
@@ -360,7 +363,7 @@
   
           <div class="mt-5 space-y-3">
             <p class="font-bold">Phone Number* </p>
-            <input type="number" placeholder="Enter your phone number" class=" input   w-full max-w-xs " />
+            <input type=" " placeholder="Enter your phone number" class=" input   w-full max-w-xs " />
           </div>
   
           <div class="mt-5 space-y-3">
