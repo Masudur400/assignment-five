@@ -4,7 +4,7 @@ let count = 0;
 for (const btn of allBtn) {
   btn.addEventListener('click', function (e) {
     if(count >= 4){
-      alert("Maximum purchased")
+      alert("Purchase maxed")
       return;
     }
     count = count + 1;
@@ -82,4 +82,13 @@ function next() {
   const successSection = document.getElementById('success');
   successSection.classList.remove('hidden');
 }
+
+ 
+  document.getElementById('buy-ticket').addEventListener('click',function(){
+    let scrollBtn = document.getElementById('ticket-section');
+    //  this.scrollTo('ticket-section');
+      window.scrollTo({top:scrollBtn.offsetTop});
+    
+  })
+
  
