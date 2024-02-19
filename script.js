@@ -85,7 +85,7 @@ function next() {
 
  
   document.getElementById('buy-ticket').addEventListener('click',function(){
-    let scrollBtn = document.getElementById('ticket-section');
+    let scrollBtn = document.getElementById('bus-sit');
     //  this.scrollTo('ticket-section');
       window.scrollTo({top:scrollBtn.offsetTop});
     
